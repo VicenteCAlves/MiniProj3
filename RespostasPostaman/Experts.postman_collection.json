@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "543fcb2f-b70a-4368-8aa8-ddfb361fb362",
+		"name": "Experts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/experts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/experts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"experts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/experts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/experts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"experts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "213"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d5-xS6V4EUvxqYfmNTgNZTJggQh2Ko\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:40:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nome\": \"teste1\",\n        \"classe\": \"B\",\n        \"tipo\": \"1\"\n    },\n    {\n        \"nome\": \"teste\",\n        \"classe\": \"C\",\n        \"tipo\": \"5\"\n    },\n    {\n        \"nome\": \"teste3\",\n        \"classe\": \"50\",\n        \"tipo\": \"1\"\n    },\n    {\n        \"nome\": \"teste4\",\n        \"classe\": \"50\",\n        \"tipo\": \"1\"\n    },\n    {\n        \"nome\": \"teste5\",\n        \"classe\": \"50\",\n        \"tipo\": \"1\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/experts/adiciona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"C\",\r\n    \"tipo\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/experts/adiciona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"experts",
+						"adiciona"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"C\",\r\n    \"tipo\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/experts/adiciona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"experts",
+								"adiciona"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3f-oMBSgKGr2/fYmj7XPF8nvGqtRSM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Expert foi adicionado com sucesso\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/experts/modifica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/experts/modifica/Expert1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"experts",
+						"modifica",
+						"Expert1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/experts/modifica",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/experts/modifica/Expert1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"experts",
+								"modifica",
+								"Expert1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "51"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33-rfskYsm+C5D+WqPvPidcHd/a9pk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Expert foi modificado\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/experts/elimina",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/experts/elimina/Expert1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"experts",
+						"elimina",
+						"Expert1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/experts/elimina",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Expert1\",\r\n    \"classe\": \"X\",\r\n    \"tipo\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/experts/elimina/Expert1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"experts",
+								"elimina",
+								"Expert1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-2YirphkLmu9OfFpxmHGeVwNcpRw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Expert foi removido\"\n}"
+				}
+			]
+		}
+	]
+}

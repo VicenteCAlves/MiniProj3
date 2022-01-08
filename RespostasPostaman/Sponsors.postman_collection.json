@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "5eed4eb5-ac7e-4bbe-8eb8-912a7082be5c",
+		"name": "Sponsors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/sponsors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/sponsors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sponsors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/sponsors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/sponsors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sponsors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "195"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c3-6tpeQlAqrnDKmcH1KeKRrLqeWVc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nome\": \"sandra\",\n        \"percentagem\": \"30\",\n        \"tipo\": \"1\"\n    },\n    {\n        \"nome\": \"sabrina\",\n        \"percentagem\": \"22\",\n        \"tipo\": \"4\"\n    },\n    {\n        \"nome\": \"vicente\",\n        \"percentagem\": \"50\",\n        \"tipo\": \"5\"\n    },\n    {\n        \"nome\": \"teste\",\n        \"percentagem\": \"100\",\n        \"tipo\": \"C\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/sponsors/adiciona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"40\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/sponsors/adiciona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sponsors",
+						"adiciona"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/adiciona",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"40\",\r\n    \"tipo\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/sponsors/adiciona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sponsors",
+								"adiciona"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"40-kRRj64upbrtoiuhcKYXrdG7kq+c\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Sponsor foi adicionado com sucesso\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/sponsors/modifica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"40\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/sponsors/modifica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sponsors",
+						"modifica"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/sponsors/modifica",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"20\",\r\n    \"tipo\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/sponsors/modifica/Sponsor1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sponsors",
+								"modifica",
+								"Sponsor1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-fylX021poJtojFuXA6bx10ZH/QQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:41:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Sponsor foi modificado\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/sponsors/elimina",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"40\",\r\n    \"tipo\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/sponsors/elimina/Sponsor1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sponsors",
+						"elimina",
+						"Sponsor1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/sponsors/elimina",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sponsor1\",\r\n    \"percentagem\": \"40\",\r\n    \"tipo\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/sponsors/elimina/Sponsor1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sponsors",
+								"elimina",
+								"Sponsor1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-P6+H8Unqg35dWps0zh8UDvFqEzM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Jan 2022 21:42:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"erro\": false,\n    \"mensagem\": \"O Sponsor foi removido\"\n}"
+				}
+			]
+		}
+	]
+}
